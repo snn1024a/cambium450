@@ -1,0 +1,36 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# [VMware commented] source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface LEFT FROM BACK LOOK
+auto ens32
+iface ens32 inet dhcp
+#VLAN 169 on ens32
+auto ens32.130
+iface ens32.130 inet dhcp
+#VLAN 169 on ens32
+auto ens32.169
+iface ens32.169 inet dhcp
+#VLAN 1000 on ens32
+auto ens32.1000
+iface ens32.1000 inet dhcp
+#VLAN 1691 on ens32
+auto ens32.1691
+iface ens32.1691 inet dhcp
+#VLAN 1692 on ens32
+auto ens32.1692
+iface ens32.1692 inet dhcp
+#VLAN 1693 on ens32
+auto ens32.1693
+iface ens32.1693 inet dhcp
+#VLAN 1694 on ens32
+auto ens32.1694
+iface ens32.1694 inet dhcp
+#VLAN 1695 on ens32
+auto ens32.1695
+iface ens32.1695 inet dhcp
